@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext", "dom"],
     "module": "esnext",
     "target": "esnext",
+    "paths": [
+      "./src/*.png",
+      "./src/components/*"
+    ],
     "moduleResolution": "bundler",
     "strict": true,
     "downlevelIteration": true,

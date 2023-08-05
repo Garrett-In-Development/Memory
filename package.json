@@ -17,12 +17,27 @@
     "@types/web": "^0.0.99",
     "bun-types": "canary",
     "react-refresh": "0.10.0",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^3.3.3",
     "typescript": "latest"
   },
   "scripts": {
-    "dev": "bun --watch run dev.tsx"
+    "dev": "bun --watch run dev.tsx",
+    "build": "bun react-scripts build",
+    "start": "bun --watch run ./src/index.tsx"
   },
   "module": "index.ts",
-  "type": "module"
+  "type": "module",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
