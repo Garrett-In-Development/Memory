@@ -1,6 +1,7 @@
 export interface ICard {
   id: number,
-  src: string
+  src: string,
+  matched: boolean
 }
 
 export interface ICards {
