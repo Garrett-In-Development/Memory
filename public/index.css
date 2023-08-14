@@ -10,51 +10,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+.front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
 }
 
-.App {
-  text-align: center;
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
 }
 
-.App-logo {
-  height: 150px;
-  pointer-events: none;
+.back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 5s linear;
-  }
-}
-
-.App h3 {
-  font-size: 2.75rem;
-  margin: 0px;
-}
-
-.App-article {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-  font-size: 14pt;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
 }
